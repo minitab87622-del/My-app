@@ -10,22 +10,21 @@ source.include_exts = py,png,jpg,kv,atlas,txt
 
 version = 1.0
 
-# المكتبات المطلوبة (تم التأكد من وجود مكتبات العربية)[span_4](start_span)[span_4](end_span)
+# المكتبات المطلوبة لتشغيل النصوص العربية وتطبيق كيفي
 requirements = python3,kivy,arabic_reshaper,python-bidi
 
-# مسارات الأيقونات
+# مسارات الأيقونات وشاشة البدء
 icon.filename = %(source.dir)s/icon.png
 presplash.filename = %(source.dir)s/presplash.png
 
 orientation = portrait
 fullscreen = 0
 
-# إعدادات الأندرويد (تمت إزالة سطر NDK ليتولى النظام إدارته تلقائياً)
+# إعدادات الأندرويد
 android.api = 33
 android.minapi = 21
-# android.ndk = 25b  <-- تمت إزالته لتجنب أخطاء التوافق
 
-# إضافة هذا السطر لحل مشكلة التراخيص
+# الموافقة التلقائية على ترخيص Android SDK (لمنع توقف البناء)
 android.accept_sdk_license = True
 
 log_level = 2
